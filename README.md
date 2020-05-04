@@ -27,3 +27,10 @@ reverse_each_word("Hello there, and how are you?")
 **Hint:** *How can we reverse each word and return those altered words? Remember that* `.each` *returns the original array but other enumerators don't.*
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/reverse-each-word' title='Reverse Each Word'>Reverse Each Word</a> on Learn.co and start learning to code for free.</p>
+
+def reverse_each_word(sentence)
+  ((sentence.split(" ")).collect do |word|
+    word.reverse
+  end).join(" ")
+
+end
